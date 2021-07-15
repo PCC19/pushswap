@@ -6,17 +6,17 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 18:34:35 by pcunha            #+#    #+#             */
-/*   Updated: 2021/05/10 17:54:53 by user42           ###   ########.fr       */
+/*   Updated: 2021/07/15 23:18:22 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #define INT_MAX 2147483647
 
-int	ft_atoi(const char *str)
+double	ft_atoi(const char *str)
 {
-	int	res;
-	int	neg;
+	double	res;
+	double	neg;
 
 	neg = 1;
 	res = 0;
@@ -29,13 +29,6 @@ int	ft_atoi(const char *str)
 		++str;
 	while (*str && *str >= '0' && *str <= '9')
 	{
-		if (res > INT_MAX / 10)
-		{
-			if (neg == 1)
-				return (-1);
-			else
-				return (0);
-		}
 		res = res * 10 + (*str - '0');
 		++str;
 	}

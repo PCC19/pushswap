@@ -6,15 +6,9 @@ int main(int argc, char *argv[])
 	(void) argv;
 	char *limpo = NULL;
 
-	printf("atoi %d\n", ft_atoi("abc"));
-
-
 	check_inputs(argc, argv);
 
 	
-	printf("string suja : %s\n", argv[1]);
-	//printf("string limpa: %s\n", limpo);
-
 	printf("Hello World\n");
 	free(limpo);
 	return (0);
