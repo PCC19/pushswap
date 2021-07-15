@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 22:48:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/15 23:15:58 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/15 23:24:42 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ double *populate_array(int argc, char **array_bi)
 		if(array[i] < INT_MIN || array[i] > INT_MAX || !is_integer(array_bi[i]))
 		{
 			free(array);
-			u_free_array_bi(array_bi);
+			if (argc < 3)
+				u_free_array_bi(array_bi);
 			bye();
 		}
 		printf("array[i] = %f\n", array[i]);

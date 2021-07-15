@@ -12,7 +12,7 @@ ODIR =	./objs/
 SRCS =	$(SDIR)main.c\
 		$(SDIR)remove_quotes.c\
 		$(SDIR)bye.c\
-		$(SDIR)check_inputs.c\
+		$(SDIR)parse_inputs.c\
 		$(SDIR)is_integer.c\
 		$(SDIR)populate_array.c
 

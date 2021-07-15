@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_inputs.c                                     :+:      :+:    :+:   */
+/*   parse_inputs.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/15 21:14:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/15 23:19:41 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/15 23:21:37 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/15 23:21:41 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-
-
-int	check_inputs(int argc, char *argv[])
+int	parse_inputs(int argc, char *argv[])
 {
 	char *cleaned_str = NULL;
 	double	*array;

@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 	(void) argv;
 	char *limpo = NULL;
 
-	check_inputs(argc, argv);
+	parse_inputs(argc, argv);
 
 	
 	printf("Hello World\n");
