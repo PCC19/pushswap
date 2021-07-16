@@ -25,9 +25,25 @@ int main(int argc, char *argv[])
 	printf("segundo \n");
 	a = ft_dlst_push(&y, a);
 	u_print_dlst(a);
+	printf("terceiro\n");
+	int z = 30;
+	a = ft_dlst_push(&z, a);
+	u_print_dlst(a);
+	int len = len_dlst(a);
+	printf("len: %d\n", len);
+	t_dlist *ult = last_dlst(a);
+	printf("ult: %d\n", *(int*)ult->content);
+	t_dlist *primeiro = first_dlst(ult);
+	printf("first: %d\n", *(int*)primeiro->content);
+	printf("stack; \n");
+	u_print_stack(a);
+
+
+
+
+
+
 	u_free_dlst(a);
-
-
 	free(array);
 	
 	printf("Hello World\n");

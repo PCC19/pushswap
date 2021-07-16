@@ -19,7 +19,11 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)check_repeated.c\
 		$(SDIR)u_print_dlst.c\
 		$(SDIR)ft_dlst_push.c\
-		$(SDIR)u_free_dlst.c
+		$(SDIR)u_free_dlst.c\
+		$(SDIR)len_dlst.c\
+		$(SDIR)last_dlst.c\
+		$(SDIR)first_dlst.c\
+		$(SDIR)u_print_stack.c
 
 
 
