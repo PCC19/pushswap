@@ -11,7 +11,8 @@ int main(int argc, char *argv[])
 
 	parse_inputs(argc, argv, &array, &n_array);
 	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
-	q_sort(array, 0 , argc - 2);
+	//q_sort(array, 0 , argc - 2);
+	check_repeated(array, n_array);
 
 	printf("sorted: \n");
 	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
