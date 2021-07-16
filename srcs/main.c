@@ -2,12 +2,21 @@
 
 int main(int argc, char *argv[])
 {
-	(void) argc;
-	(void) argv;
-	char *limpo = NULL;
+	(void)	argc;
+	(void)	argv;
+	char	*limpo = NULL;
+	double	*array;
+	int		n_array;
+	int		i;
 
-	parse_inputs(argc, argv);
+	parse_inputs(argc, argv, &array, &n_array);
+	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
+	q_sort(array, 0 , argc - 2);
 
+	printf("sorted: \n");
+	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
+
+	free(array);
 	
 	printf("Hello World\n");
 	free(limpo);

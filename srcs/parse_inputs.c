@@ -6,16 +6,15 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 23:21:37 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/15 23:21:41 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/16 17:02:36 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	parse_inputs(int argc, char *argv[])
+int	parse_inputs(int argc, char *argv[], double **array, int *n_array)
 {
 	char *cleaned_str = NULL;
-	double	*array;
 	char **array_bi;
 	int	i;
 
@@ -29,7 +28,8 @@ int	parse_inputs(int argc, char *argv[])
 		i = 0;
 		while (array_bi[i] != NULL)
 			i++;
-		array = populate_array(++i, array_bi);
+		(*array) = populate_array(i, array_bi);
+		*n_array = i - 1;
 		free(cleaned_str);
 		u_free_array_bi(array_bi);
 	}
@@ -37,7 +37,8 @@ int	parse_inputs(int argc, char *argv[])
 	if (argc > 2)
 	{
 		cleaned_str = NULL;
-		array = populate_array(argc, &argv[1]);
+		(*array) = populate_array(argc, &argv[1]);
+		*n_array = argc - 1;
 	}
 
 
@@ -50,7 +51,6 @@ int	parse_inputs(int argc, char *argv[])
 		//			Calcula estatisticas ?
 		//	Check se ha repetidos
 		//		cleaned_str = ft_strdup("vazio");
-	free(array);
 	return (0);
 }
 

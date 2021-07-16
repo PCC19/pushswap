@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 22:48:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/15 23:24:42 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/16 16:27:27 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ double *populate_array(int argc, char **array_bi)
 				u_free_array_bi(array_bi);
 			bye();
 		}
-		printf("array[i] = %f\n", array[i]);
 		i++;
 	}
 	return (array);

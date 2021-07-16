@@ -14,7 +14,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)bye.c\
 		$(SDIR)parse_inputs.c\
 		$(SDIR)is_integer.c\
-		$(SDIR)populate_array.c
+		$(SDIR)populate_array.c\
+		$(SDIR)q_sort.c
 
 
 
