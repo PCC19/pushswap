@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/16 19:19:16 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/16 19:38:52 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,9 @@ int		is_integer(char *s);
 double	*populate_array(int argc, char **array_bi);
 void	q_sort(double *array, int left, int right);
 void	check_repeated(double *array, int n_array);
-void	ft_dlst_push(int value, t_dlist *list);
+t_dlist	*ft_dlst_push(int *value, t_dlist *list);
 void	u_print_dlst(t_dlist *list);
+void	u_free_dlst(t_dlist *list);
+
 
 #endif

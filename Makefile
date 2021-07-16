@@ -17,7 +17,9 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)populate_array.c\
 		$(SDIR)q_sort.c\
 		$(SDIR)check_repeated.c\
-		$(SDIR)u_print_dlst.c
+		$(SDIR)u_print_dlst.c\
+		$(SDIR)ft_dlst_push.c\
+		$(SDIR)u_free_dlst.c
 
 
 

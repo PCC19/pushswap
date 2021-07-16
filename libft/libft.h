@@ -6,7 +6,7 @@
 /*   By: cpereira <cpereira@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:27:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/16 17:42:39 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/16 20:11:19 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct s_list
 typedef struct s_dlist
 {
 	void			*content;
-	int				*index;
+	int				index;
 	struct s_dlist	*next;
 	struct s_dlist	*prev;
 }					t_dlist;

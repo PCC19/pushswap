@@ -18,10 +18,14 @@ int main(int argc, char *argv[])
 	a = NULL;
 	int x = 10;
 	printf("ini listas\n");
-	a = ft_dlst_create(&x);
+//	a = ft_dlst_create(&x);
+	a = ft_dlst_push(&x, a);
 	u_print_dlst(a);
-	free(a);
-
+	int y = 20;
+	printf("segundo \n");
+	a = ft_dlst_push(&y, a);
+	u_print_dlst(a);
+	u_free_dlst(a);
 
 
 	free(array);
