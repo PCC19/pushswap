@@ -6,25 +6,36 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/16 17:16:11 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/16 19:19:16 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include "libft.h"
-#include <stdio.h>
-#include <limits.h>
+# include "libft.h"
+# include <stdio.h>
+# include <limits.h>
 
-char *remove_quotes(char *str);
+/*
+** Data Structures 
+*/
+
+
+
+
+/*
+** Functions
+*/
+char	*remove_quotes(char *str);
 void	bye(void);
 void	u_print_array_bi(char **s);
-int	parse_inputs(int argc, char *argv[], double **array, int *n_array);
-int	is_integer(char *s);
-double *populate_array(int argc, char **array_bi);
+int		parse_inputs(int argc, char *argv[], double **array, int *n_array);
+int		is_integer(char *s);
+double	*populate_array(int argc, char **array_bi);
 void	q_sort(double *array, int left, int right);
 void	check_repeated(double *array, int n_array);
+void	ft_dlst_push(int value, t_dlist *list);
+void	u_print_dlst(t_dlist *list);
 
 #endif
-

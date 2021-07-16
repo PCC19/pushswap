@@ -8,14 +8,21 @@ int main(int argc, char *argv[])
 	double	*array;
 	int		n_array;
 	int		i;
+	t_dlist	*a;
 
 	parse_inputs(argc, argv, &array, &n_array);
 	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
-	//q_sort(array, 0 , argc - 2);
 	check_repeated(array, n_array);
 
-	printf("sorted: \n");
-	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
+	// Cria lista
+	a = NULL;
+	int x = 10;
+	printf("ini listas\n");
+	a = ft_dlst_create(&x);
+	u_print_dlst(a);
+	free(a);
+
+
 
 	free(array);
 	

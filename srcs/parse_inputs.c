@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 23:21:37 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/16 17:02:36 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/16 17:25:25 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 int	parse_inputs(int argc, char *argv[], double **array, int *n_array)
 {
-	char *cleaned_str = NULL;
+	char *cleaned_str;
 	char **array_bi;
 	int	i;
 
+	cleaned_str = NULL;
 	if (argc == 1)
 		bye();
 	
@@ -33,24 +34,10 @@ int	parse_inputs(int argc, char *argv[], double **array, int *n_array)
 		free(cleaned_str);
 		u_free_array_bi(array_bi);
 	}
-
 	if (argc > 2)
 	{
-		cleaned_str = NULL;
 		(*array) = populate_array(argc, &argv[1]);
 		*n_array = argc - 1;
 	}
-
-
-		//Input nao tem aspas
-		//	Split por espaco
-		//	Loop ate final do string
-		//		Converte para int
-		//		Checa se eh int e menor que maxint
-		//		Alimenta array com ints
-		//			Calcula estatisticas ?
-		//	Check se ha repetidos
-		//		cleaned_str = ft_strdup("vazio");
 	return (0);
 }
-
