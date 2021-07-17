@@ -29,7 +29,9 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)rotate.c\
 		$(SDIR)reverse_rotate.c\
 		$(SDIR)swap.c\
-		$(SDIR)print_stacks.c
+		$(SDIR)print_stacks.c\
+		$(SDIR)pa.c\
+		$(SDIR)pb.c
 
 
 

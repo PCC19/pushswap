@@ -34,11 +34,15 @@ int main(int argc, char *argv[])
 	printf("first of a: %d\n", *(int*)a->content);
 	b = NULL;
 	//printf("a: %p | b %p\n", a, b);
-	push(&b,&a);
+	pb(&a,&b);
 	printf("stacks: \n");
 	print_stacks(a,b);
 
-	push(&b,&a);
+	pb(&a,&b);
+	print_stacks(a,b);
+	pa(&a,&b);
+	print_stacks(a,b);
+	pb(&a,&b);
 	print_stacks(a,b);
 
 	printf("rotate: \n");
