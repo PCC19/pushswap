@@ -25,7 +25,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)first_dlst.c\
 		$(SDIR)u_print_stack.c\
 		$(SDIR)push_array_into_stack.c\
-		$(SDIR)push.c
+		$(SDIR)push.c\
+		$(SDIR)rotate.c
 
 
 

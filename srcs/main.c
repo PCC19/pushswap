@@ -46,6 +46,9 @@ int main(int argc, char *argv[])
 	u_print_stack(a, 'a');
 	u_print_stack(b, 'b');
 
+	printf("rotate: \n");
+	rotate(&a);
+	u_print_stack(a, 'a');
 
 
 	u_free_dlst(a);
@@ -77,6 +80,8 @@ int main(int argc, char *argv[])
 	printf("first: %d\n", *(int*)primeiro->content);
 	printf("stack; \n");
 	u_print_stack(a, 'a');
+
+
 
 
 
