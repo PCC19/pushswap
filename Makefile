@@ -28,7 +28,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)push.c\
 		$(SDIR)rotate.c\
 		$(SDIR)reverse_rotate.c\
-		$(SDIR)swap.c
+		$(SDIR)swap.c\
+		$(SDIR)print_stacks.c
 
 
 

@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   reverse_rotate.c                                   :+:      :+:    :+:   */
+/*   print_stacks.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/17 18:48:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:41:21 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/17 19:30:10 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/17 19:32:31 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	reverse_rotate(t_dlist **a)
+void	print_stacks(t_dlist *a, t_dlist *b)
 {
-	t_dlist *last;
-
-	if (*a != NULL && (*a)->next != NULL)
-	{
-		last = last_dlst(*a);
-		last->prev->next = NULL;
-		last->next = (*a);
-		(*a)->prev = last;
-		last->prev = NULL;
-		(*a) = last;
-	}
+	u_print_stack(a,'a');
+	u_print_stack(b,'b');
+	printf("------------------\n");
 }

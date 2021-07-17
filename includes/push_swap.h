@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:24:33 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 19:31:55 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	push(t_dlist **to, t_dlist **from);
 void	rotate(t_dlist **a);
 void	reverse_rotate(t_dlist **a);
 void	swap(t_dlist **a);
-
+void	print_stacks(t_dlist *a, t_dlist *b);
 
 
 

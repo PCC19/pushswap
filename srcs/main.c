@@ -35,32 +35,27 @@ int main(int argc, char *argv[])
 	b = NULL;
 	//printf("a: %p | b %p\n", a, b);
 	push(&b,&a);
-	//printf("a: %p | b %p\n", a, b);
-	printf("-----------\n");	
-	u_print_stack(a, 'a');
-	u_print_stack(b, 'b');
+	printf("stacks: \n");
+	print_stacks(a,b);
 
 	push(&b,&a);
-	//printf("a: %p | b %p\n", a, b);
-	printf("-----------\n");	
-	u_print_stack(a, 'a');
-	u_print_stack(b, 'b');
+	print_stacks(a,b);
 
 	printf("rotate: \n");
 	rotate(&a);
-	u_print_stack(a, 'a');
+	print_stacks(a,b);
 
 	printf("reverse rotate: \n");
 	reverse_rotate(&a);
-	u_print_stack(a, 'a');
+	print_stacks(a,b);
 	reverse_rotate(&a);
-	u_print_stack(a, 'a');
+	print_stacks(a,b);
 
 	printf("swap: \n");
 	swap(&a);
-	u_print_stack(a, 'a');
+	print_stacks(a,b);
 	swap(&a);
-	u_print_stack(a, 'a');
+	print_stacks(a,b);
 
 
 
