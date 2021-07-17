@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 20:16:28 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 20:24:18 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,14 +50,15 @@ void	swap(t_dlist **a);
 void	print_stacks(t_dlist *a, t_dlist *b);
 void	pa(t_dlist **a, t_dlist **b);
 void	pb(t_dlist **a, t_dlist **b);
-void	sa(t_dlist **x);
-void	sb(t_dlist **x);
-void	ra(t_dlist **x);
-void	rb(t_dlist **x);
+void	ra(t_dlist **a, t_dlist **b);
+void	rb(t_dlist **a, t_dlist **b);
+void	sa(t_dlist **a, t_dlist **b);
+void	sb(t_dlist **a, t_dlist **b);
 void	rra(t_dlist **x);
 void	rrb(t_dlist **x);
 void	ss(t_dlist **a, t_dlist **b);
 void	rr(t_dlist **a, t_dlist **b);
+void	rrr(t_dlist **a, t_dlist **b);
 
 
 

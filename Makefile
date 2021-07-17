@@ -39,7 +39,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)rra.c\
 		$(SDIR)rrb.c\
 		$(SDIR)ss.c\
-		$(SDIR)rr.c
+		$(SDIR)rr.c\
+		$(SDIR)rrr.c
 
 
 

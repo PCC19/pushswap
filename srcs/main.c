@@ -46,9 +46,13 @@ int main(int argc, char *argv[])
 	print_stacks(a,b);
 
 	printf("rotate: \n");
-	ra(&a);
+	ra(&a, &b);
 	print_stacks(a,b);
-	rb(&b);
+	ra(&a, &b);
+	print_stacks(a,b);
+	rb(&a, &b);
+	print_stacks(a,b);
+	rb(&a, &b);
 	print_stacks(a,b);
 
 
@@ -61,13 +65,13 @@ int main(int argc, char *argv[])
 	print_stacks(a,b);
 
 	printf("swap: \n");
-	sa(&a);
+	sa(&a, &b);
 	print_stacks(a,b);
-	sa(&a);
+	sa(&a, &b);
 	print_stacks(a,b);
-	sb(&b);
+	sb(&a, &b);
 	print_stacks(a,b);
-	sb(&b);
+	sb(&a, &b);
 	print_stacks(a,b);
 	
 	pb(&a,&b);
@@ -79,6 +83,11 @@ int main(int argc, char *argv[])
 	rr(&a, &b);
 	print_stacks(a,b);
 	rr(&a, &b);
+	print_stacks(a,b);
+
+	rrr(&a, &b);
+	print_stacks(a,b);
+	rrr(&a, &b);
 	print_stacks(a,b);
 
 

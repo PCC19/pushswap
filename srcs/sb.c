@@ -6,14 +6,15 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 19:59:16 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:59:27 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 20:23:28 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sb(t_dlist **x)
+void	sb(t_dlist **a, t_dlist **b)
 {
-	swap(x);
+	(void) a;
+	swap(b);
 	write(1, "sb\n",3);
 }

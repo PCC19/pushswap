@@ -6,14 +6,15 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 20:05:44 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 20:06:40 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 20:22:36 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rb(t_dlist **x)
+void	rb(t_dlist **a, t_dlist **b)
 {
-	rotate(x);
+	(void) a;
+	rotate(b);
 	write (1, "rb\n", 3);
 }
