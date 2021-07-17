@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		i++;
 
 	}
-	a = push_array_into_list(array_int, n_array, a);
+	a = push_array_into_stack(array_int, n_array, a);
 	u_print_dlst(a);
 	u_print_stack(a);
 	u_free_dlst(a);

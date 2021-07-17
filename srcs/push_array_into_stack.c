@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_array_into_list.c                             :+:      :+:    :+:   */
+/*   push_array_into_stack.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 01:48:42 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 02:27:41 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 02:35:45 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_dlist	*push_array_into_list(int *array, int n_array, t_dlist *list)
+t_dlist	*push_array_into_stack(int *array, int n_array, t_dlist *list)
 {
 	int i;
 

@@ -24,7 +24,7 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)last_dlst.c\
 		$(SDIR)first_dlst.c\
 		$(SDIR)u_print_stack.c\
-		$(SDIR)push_array_into_list.c
+		$(SDIR)push_array_into_stack.c
 
 
 
