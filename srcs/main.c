@@ -56,12 +56,16 @@ int main(int argc, char *argv[])
 	print_stacks(a,b);
 
 	printf("swap: \n");
-	swap(&a);
+	sa(&a);
 	print_stacks(a,b);
-	swap(&a);
+	sa(&a);
 	print_stacks(a,b);
 
 
+	sb(&b);
+	print_stacks(a,b);
+	sb(&b);
+	print_stacks(a,b);
 
 
 	u_free_dlst(a);

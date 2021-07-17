@@ -31,7 +31,9 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)swap.c\
 		$(SDIR)print_stacks.c\
 		$(SDIR)pa.c\
-		$(SDIR)pb.c
+		$(SDIR)pb.c\
+		$(SDIR)sa.c\
+		$(SDIR)sb.c
 
 
 

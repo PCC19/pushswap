@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:53:03 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 19:59:39 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,9 @@ void	swap(t_dlist **a);
 void	print_stacks(t_dlist *a, t_dlist *b);
 void	pa(t_dlist **a, t_dlist **b);
 void	pb(t_dlist **a, t_dlist **b);
+void	sa(t_dlist **x);
+void	sb(t_dlist **x);
+
 
 
 
