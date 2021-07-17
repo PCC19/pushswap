@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 01:25:24 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 01:52:51 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int		len_dlst(t_dlist *list);
 t_dlist	*last_dlst(t_dlist *list);
 t_dlist	*first_dlst(t_dlist *list);
 void	u_print_stack(t_dlist *list);
+t_dlist	*push_array_into_list(int *array, int n_array, t_dlist *list);
+
 
 
 

@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   u_print_stack.c                                    :+:      :+:    :+:   */
+/*   push_array_into_list.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/17 01:21:57 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 02:26:31 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/17 01:48:42 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/17 02:27:41 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	u_print_stack(t_dlist *list)
+t_dlist	*push_array_into_list(int *array, int n_array, t_dlist *list)
 {
-	t_dlist *cursor;
+	int i;
 
-	cursor = last_dlst(list);
-	write(1, "|: ",3);
-	while(cursor != NULL)
+	i = n_array - 1;
+	while (i >= 0)
 	{
-		printf("%d ", *(int *)cursor->content);
-		cursor = cursor->prev;
+		list  = ft_dlst_push(&array[i], list);
+		printf("%d: content %d\n", i, *(int*)list->content);
+		i--;
 	}
-	printf("\n");
+	return (list);
 }

@@ -6,6 +6,7 @@ int main(int argc, char *argv[])
 	(void)	argv;
 	char	*limpo = NULL;
 	double	*array;
+	int		*array_int;
 	int		n_array;
 	int		i;
 	t_dlist	*a;
@@ -14,8 +15,27 @@ int main(int argc, char *argv[])
 	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
 	check_repeated(array, n_array);
 
-	// Cria lista
 	a = NULL;
+	array_int = (int*)malloc(sizeof(int)*n_array);
+	printf("n_array: %d\n", n_array);
+	i = 0;
+	while (i < n_array)
+	{
+		array_int[i] = (int)array[i];
+		printf("array_int[%d] = %d\n", i, array_int[i]);
+		i++;
+
+	}
+	a = push_array_into_list(array_int, n_array, a);
+	u_print_dlst(a);
+	u_print_stack(a);
+	u_free_dlst(a);
+	free(array);
+	free(array_int);
+	return (0);
+
+
+	// Cria lista
 	int x = 10;
 	printf("ini listas\n");
 //	a = ft_dlst_create(&x);
