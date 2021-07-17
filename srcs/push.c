@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   u_free_dlst.c                                      :+:      :+:    :+:   */
+/*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/16 19:36:59 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 18:16:32 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/17 17:27:45 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/17 18:14:05 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	u_free_dlst(t_dlist *list)
+void	push(t_dlist **to, t_dlist **from)
 {
-	t_dlist *temp;
+	t_dlist *element;
 
-	while (list != NULL)
+	if (*from != NULL)
 	{
-		temp = list->next;
-		free(list);
-		list = temp;
+		element = *from;
+
+		// tira elemento do from
+		*from = (*from)->next;
+		(*from)->prev = NULL;
+
+		// Adiciona elemento ao to
+		if (*to != NULL)
+			(*to)->prev = element;
+		element->next = *to;
+		element->prev = NULL;
+		*to = element;
 	}
 }

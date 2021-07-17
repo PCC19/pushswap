@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
 	int		n_array;
 	int		i;
 	t_dlist	*a;
+	t_dlist	*b;
 
 	parse_inputs(argc, argv, &array, &n_array);
 	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
@@ -28,8 +29,27 @@ int main(int argc, char *argv[])
 	}
 	a = push_array_into_stack(array_int, n_array, a);
 	u_print_dlst(a);
-	u_print_stack(a);
+	u_print_stack(a, 'a');
+
+	printf("first of a: %d\n", *(int*)a->content);
+	b = NULL;
+	//printf("a: %p | b %p\n", a, b);
+	push(&b,&a);
+	//printf("a: %p | b %p\n", a, b);
+	printf("-----------\n");	
+	u_print_stack(a, 'a');
+	u_print_stack(b, 'b');
+
+	push(&b,&a);
+	//printf("a: %p | b %p\n", a, b);
+	printf("-----------\n");	
+	u_print_stack(a, 'a');
+	u_print_stack(b, 'b');
+
+
+
 	u_free_dlst(a);
+	u_free_dlst(b);
 	free(array);
 	free(array_int);
 	return (0);
@@ -56,7 +76,7 @@ int main(int argc, char *argv[])
 	t_dlist *primeiro = first_dlst(ult);
 	printf("first: %d\n", *(int*)primeiro->content);
 	printf("stack; \n");
-	u_print_stack(a);
+	u_print_stack(a, 'a');
 
 
 
