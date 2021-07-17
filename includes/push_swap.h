@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:59:39 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 20:16:28 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,14 @@ void	pa(t_dlist **a, t_dlist **b);
 void	pb(t_dlist **a, t_dlist **b);
 void	sa(t_dlist **x);
 void	sb(t_dlist **x);
+void	ra(t_dlist **x);
+void	rb(t_dlist **x);
+void	rra(t_dlist **x);
+void	rrb(t_dlist **x);
+void	ss(t_dlist **a, t_dlist **b);
+void	rr(t_dlist **a, t_dlist **b);
+
+
 
 
 

@@ -33,7 +33,13 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)pa.c\
 		$(SDIR)pb.c\
 		$(SDIR)sa.c\
-		$(SDIR)sb.c
+		$(SDIR)sb.c\
+		$(SDIR)ra.c\
+		$(SDIR)rb.c\
+		$(SDIR)rra.c\
+		$(SDIR)rrb.c\
+		$(SDIR)ss.c\
+		$(SDIR)rr.c
 
 
 
