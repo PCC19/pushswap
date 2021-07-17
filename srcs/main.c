@@ -56,6 +56,12 @@ int main(int argc, char *argv[])
 	reverse_rotate(&a);
 	u_print_stack(a, 'a');
 
+	printf("swap: \n");
+	swap(&a);
+	u_print_stack(a, 'a');
+	swap(&a);
+	u_print_stack(a, 'a');
+
 
 
 

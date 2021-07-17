@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 18:53:12 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/17 19:24:33 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ t_dlist	*push_array_into_stack(int *array, int n_array, t_dlist *list);
 void	push(t_dlist **to, t_dlist **from);
 void	rotate(t_dlist **a);
 void	reverse_rotate(t_dlist **a);
+void	swap(t_dlist **a);
+
 
 
 
