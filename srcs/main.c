@@ -50,6 +50,14 @@ int main(int argc, char *argv[])
 	rotate(&a);
 	u_print_stack(a, 'a');
 
+	printf("reverse rotate: \n");
+	reverse_rotate(&a);
+	u_print_stack(a, 'a');
+	reverse_rotate(&a);
+	u_print_stack(a, 'a');
+
+
+
 
 	u_free_dlst(a);
 	u_free_dlst(b);

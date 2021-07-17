@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rotate.c                                           :+:      :+:    :+:   */
+/*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/17 18:31:40 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:00:26 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/17 18:48:01 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/17 19:02:48 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rotate(t_dlist **a)
+void	reverse_rotate(t_dlist **a)
 {
 	t_dlist *last;
 
@@ -20,8 +20,8 @@ void	rotate(t_dlist **a)
 	{
 		last = last_dlst(*a);
 		last->prev->next = NULL;
-		(*a)->prev = last;
 		last->next = (*a);
+		(*a)->prev = last;
 		last->prev = NULL;
 		(*a) = last;
 	}
