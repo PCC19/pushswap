@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 17:27:45 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 18:14:05 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/18 18:17:04 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,13 @@ void	push(t_dlist **to, t_dlist **from)
 		element = *from;
 
 		// tira elemento do from
-		*from = (*from)->next;
-		(*from)->prev = NULL;
-
+		if ((*from)->next == NULL)
+			*from = NULL;
+		else
+		{
+			*from = (*from)->next;
+			(*from)->prev = NULL;
+		}
 		// Adiciona elemento ao to
 		if (*to != NULL)
 			(*to)->prev = element;

@@ -34,7 +34,8 @@ int main(int argc, char *argv[])
 	i = 0;
 	while(i < n_array)
 	{
-		pa(&a, &b);
+		pb(&a, &b);
+		//print_stacks(a,b);
 		i++;
 	}
 
