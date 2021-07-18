@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 	(void)	argc;
 	(void)	argv;
 	char	*limpo = NULL;
+	(void) limpo;
 	double	*array;
 	int		*array_int;
 	int		n_array;
@@ -13,26 +14,46 @@ int main(int argc, char *argv[])
 	t_dlist	*b;
 
 	parse_inputs(argc, argv, &array, &n_array);
-	i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
+	//i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
 	check_repeated(array, n_array);
 
 	a = NULL;
+	b = NULL;
 	array_int = (int*)malloc(sizeof(int)*n_array);
-	printf("n_array: %d\n", n_array);
+	//printf("n_array: %d\n", n_array);
 	i = 0;
 	while (i < n_array)
 	{
 		array_int[i] = (int)array[i];
-		printf("array_int[%d] = %d\n", i, array_int[i]);
+//		printf("array_int[%d] = %d\n", i, array_int[i]);
 		i++;
 
 	}
 	a = push_array_into_stack(array_int, n_array, a);
+
+	i = 0;
+	while(i < n_array)
+	{
+		pa(&a, &b);
+		i++;
+	}
+
+// ==================== FREES ===============
+
+	u_free_dlst(a);
+	u_free_dlst(b);
+	free(array);
+	free(array_int);
+	return (0);
+
+// ==================== FIM = ===============
+
+
+// ==========================================
 	u_print_dlst(a);
 	u_print_stack(a, 'a');
 
 	printf("first of a: %d\n", *(int*)a->content);
-	b = NULL;
 	//printf("a: %p | b %p\n", a, b);
 	pb(&a,&b);
 	printf("stacks: \n");
@@ -126,14 +147,6 @@ int main(int argc, char *argv[])
 
 
 
-
-
-	u_free_dlst(a);
-	free(array);
-	
-	printf("Hello World\n");
-	free(limpo);
-	return (0);
 }
 /*
 Se tem aspas
