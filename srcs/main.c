@@ -7,7 +7,6 @@ int main(int argc, char *argv[])
 	char	*limpo = NULL;
 	(void) limpo;
 	double	*array;
-	int		*array_int;
 	int		n_array;
 	int		i;
 	t_dlist	*a;
@@ -19,26 +18,8 @@ int main(int argc, char *argv[])
 
 	a = NULL;
 	b = NULL;
-	array_int = (int*)malloc(sizeof(int)*n_array);
-	//printf("n_array: %d\n", n_array);
-	i = 0;
-	while (i < n_array)
-	{
-		array_int[i] = (int)array[i];
-//		printf("array_int[%d] = %d\n", i, array_int[i]);
-		i++;
 
-	}
-	//a = push_array_into_stack(array_int, n_array, a);
 	a = push_array_into_stack(array, n_array, a);
-	double lixo = dlst_min(a);
-	double lix = dlst_max(a);
-	double mean = dlst_mean(a);
-	printf("min: %f\n", lixo);
-	printf("max: %f\n", lix);
-	printf("mean: %f\n", mean);
-	print_stacks(a,b);
-
 
 	i = 0;
 	while(i < n_array)
@@ -53,7 +34,6 @@ int main(int argc, char *argv[])
 	u_free_dlst(a);
 	u_free_dlst(b);
 	free(array);
-	free(array_int);
 	return (0);
 
 // ==================== FIM = ===============
@@ -125,7 +105,6 @@ int main(int argc, char *argv[])
 	u_free_dlst(a);
 	u_free_dlst(b);
 	free(array);
-	free(array_int);
 	return (0);
 
 
