@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/20 21:02:51 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 21:55:52 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 22:06:30 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,10 @@ static void	return_to_a(t_dlist **a, t_dlist **b)
 	cursor = *b;
 	while(cursor != NULL)
 	{
-		pb(a,b);
+		pa(a,b);
 		cursor = cursor->next;
 	}
+	pa(a, b);
 }
 
 void	radix_sort(t_dlist **a, t_dlist **b)
@@ -52,19 +53,13 @@ void	radix_sort(t_dlist **a, t_dlist **b)
 	n_bits = most_significant_bit_position(max);
 	i = 0;
 		print_stacks(*a,*b);
-	while(i < 1)
+	while(i < n_bits)
 	{
 		push_on_bit(a, b, stack_size, i);
+		return_to_a(a, b);
 		i++;
+		print_stacks(*a,*b);
 	}
-	return_to_a(a, b);
 	print_stacks(*a,*b);
 
 }
-
-	
-// loop
-	// pega 1o bit
-	// joga 0 para b / joga 1 para fundo a
-	// volta tudRR
-
