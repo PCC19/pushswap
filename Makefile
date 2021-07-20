@@ -45,7 +45,9 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)dlst_max.c\
 		$(SDIR)dlst_mean.c\
 		$(SDIR)is_stack_sorted.c\
-		$(SDIR)normalize_array.c
+		$(SDIR)normalize_array.c\
+		$(SDIR)most_significant_bit_position.c\
+		$(SDIR)radix_sort.c
 
 
 

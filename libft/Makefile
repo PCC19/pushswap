@@ -6,7 +6,7 @@
 #    By: pcunha <pcunha@student.42sp.org.br>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/28 13:39:04 by pcunha            #+#    #+#              #
-#    Updated: 2021/07/15 22:16:17 by pcunha           ###   ########.fr        #
+#    Updated: 2021/07/20 21:27:37 by pcunha           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,8 @@ SRCS=ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isdigit.c ft_isalnum.c \
 	 ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
 	 ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c\
 	 ft_lstadd_back_p.c ft_dlst_create.c ft_dlst_add.c ft_dlst_last.c\
-	 ft_rmvchar.c safe_malloc.c u_free_array_bi.c u_print_array_bi.c
+	 ft_rmvchar.c safe_malloc.c u_free_array_bi.c u_print_array_bi.c\
+	 ft_get_bit_double.c
 
 OBJECTS=ft_atoi.o ft_bzero.o ft_isalnum.o \
 		ft_isalpha.o ft_isascii.o ft_isdigit.o ft_tolower.o ft_isprint.o \
@@ -50,7 +51,8 @@ OBJECTS=ft_atoi.o ft_bzero.o ft_isalnum.o \
 		ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o\
 		ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o\
 		ft_lstadd_back_p.o ft_dlst_create.o ft_dlst_add.o ft_dlst_last.o\
-		ft_rmvchar.o safe_malloc.o u_free_array_bi.o u_print_array_bi.o
+		ft_rmvchar.o safe_malloc.o u_free_array_bi.o u_print_array_bi.o\
+		ft_get_bit_double.o
 
 CC = clang
 

@@ -11,6 +11,11 @@ int main(int argc, char *argv[])
 	int		i;
 	t_dlist	*a;
 	t_dlist	*b;
+	
+
+	double lixo = 8;
+	printf("msbp %d\n", most_significant_bit_position(lixo));
+
 
 	parse_inputs(argc, argv, &array, &n_array);
 	//i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
@@ -20,9 +25,9 @@ int main(int argc, char *argv[])
 	b = NULL;
 
 	a = push_array_into_stack(array, n_array, a);
-		print_stacks(a, b);
-		normalize_array(&array, n_array);
-		print_stacks(a, b);
+	normalize_array(&array, n_array);
+
+	radix_sort(&a, &b);
 
 	i = 0;
 	while(i < n_array)

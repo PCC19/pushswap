@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 19:05:19 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 21:34:09 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,10 @@ double	dlst_min(t_dlist *list);
 double	dlst_max(t_dlist *list);
 int		is_stack_sorted(t_dlist *list);
 void	normalize_array(double **array, int n_array);
+int		most_significant_bit_position(double num);
+void	radix_sort(t_dlist **a, t_dlist **b);
+
+
 
 
 

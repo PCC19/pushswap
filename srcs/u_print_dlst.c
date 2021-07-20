@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 19:17:40 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/16 20:23:05 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 21:28:28 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	print_node(t_dlist *list)
 {
 	printf("content:\t\t%d\n", *(int*)list->content);
-	printf("index:\t\t%d\n", list->index);
+	printf("index:\t\t%f\n", list->index);
 	printf("next:\t\t%p\n", list->next);
 	printf("prev:\t\t%p\n", list->prev);
 }
