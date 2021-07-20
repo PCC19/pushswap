@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
 	b = NULL;
 
 	a = push_array_into_stack(array, n_array, a);
+		printf("is array sorted: %d\n", is_stack_sorted(a));
+		q_sort(array, 0, n_array-1);
+		b = push_array_into_stack(array, n_array, b);
+		printf("is array sorted: %d\n", is_stack_sorted(b));
 
 	i = 0;
 	while(i < n_array)
@@ -137,30 +141,3 @@ int main(int argc, char *argv[])
 
 
 }
-/*
-Se tem aspas
-	Converte aspas em espaco
-Input nao tem aspas
-	Split por espaco
-	Loop ate final do string
-		Converte para int
-		Checa se eh int e menor que maxint
-		Alimenta array com ints
-			Calcula estatisticas ?
-	Check se ha repetidos
-Popula stacks
-
-Implementar comandos
-
-Implementar algoritmo
-	Sort basico
-	Sort Previo
-	Usar medias / quartis
-	Outros ?
-
-Instalar checker
-
-Instalar visualizador
-
-*/
-

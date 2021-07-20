@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 18:28:41 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 18:52:31 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ void	rr(t_dlist **a, t_dlist **b);
 void	rrr(t_dlist **a, t_dlist **b);
 double	dlst_min(t_dlist *list);
 double	dlst_max(t_dlist *list);
+int		is_stack_sorted(t_dlist *list);
+
 
 
 

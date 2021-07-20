@@ -43,7 +43,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)rrr.c\
 		$(SDIR)dlst_min.c\
 		$(SDIR)dlst_max.c\
-		$(SDIR)dlst_mean.c
+		$(SDIR)dlst_mean.c\
+		$(SDIR)is_stack_sorted.c
 
 
 
