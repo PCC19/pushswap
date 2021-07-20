@@ -42,7 +42,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)rr.c\
 		$(SDIR)rrr.c\
 		$(SDIR)dlst_min.c\
-		$(SDIR)dlst_max.c
+		$(SDIR)dlst_max.c\
+		$(SDIR)dlst_mean.c
 
 
 

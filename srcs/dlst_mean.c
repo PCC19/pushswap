@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   u_print_stack.c                                    :+:      :+:    :+:   */
+/*   dlst_mean.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/17 01:21:57 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 18:36:39 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/20 18:32:52 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/20 18:32:54 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	u_print_stack(t_dlist *list, char c)
+double	dlst_mean(t_dlist *list)
 {
-	t_dlist *cursor;
+	double sum;
+	double count;
 
-	cursor = last_dlst(list);
-	write(1, "|",1);
-	write(1, &c, 1);
-	write(1, ": ",2 );
-	while(cursor != NULL)
+	sum = 0;
+	count = 0;
+	while (list != NULL)
 	{
-		printf("%.0f ", *(double *)cursor->content);
-		cursor = cursor->prev;
+		sum += *(double*)list->content;
+		count++;
+		list = list->next;
 	}
-	printf("\n");
+	return (sum / count);
 }

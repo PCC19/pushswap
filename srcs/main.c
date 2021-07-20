@@ -33,8 +33,10 @@ int main(int argc, char *argv[])
 	a = push_array_into_stack(array, n_array, a);
 	double lixo = dlst_min(a);
 	double lix = dlst_max(a);
+	double mean = dlst_mean(a);
 	printf("min: %f\n", lixo);
 	printf("max: %f\n", lix);
+	printf("mean: %f\n", mean);
 	print_stacks(a,b);
 
 
