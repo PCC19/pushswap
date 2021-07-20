@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dlst_push.c                                     :+:      :+:    :+:   */
+/*   dlst_min.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/16 17:48:47 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 18:23:29 by pcunha           ###   ########.fr       */
+/*   Created: 2021/07/20 17:57:59 by pcunha            #+#    #+#             */
+/*   Updated: 2021/07/20 18:20:43 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_dlist	*ft_dlst_push(double *value, t_dlist *list)
+double	dlst_min(t_dlist *list)
 {
-	t_dlist	*node;
-	(void) node;
+	double curr_min;
 
-	// Se lista estiver vazia
-	if (list == NULL)
+	curr_min = INT_MAX;
+	while (list != NULL)
 	{
-		list = ft_dlst_create(value);
-		return (list);
+		printf("list: %f\t\t curr_min: %f\n", *(double*)list->content, curr_min);
+		if (*(double*)list->content < curr_min)
+			curr_min = *(double*)list->content;
+		list = list->next;
 	}
-	// Se lista ja existir
-	else
-	{
-		node = (t_dlist *)malloc(sizeof(t_dlist));
-		node->content = value;
-		node->index = list->index + 1;
-		node->next = list;
-		node->prev = NULL;
-		list->prev = node;
-		return (node);
-	}
+	return (curr_min);
 }

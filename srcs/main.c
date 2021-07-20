@@ -29,7 +29,12 @@ int main(int argc, char *argv[])
 		i++;
 
 	}
-	a = push_array_into_stack(array_int, n_array, a);
+	//a = push_array_into_stack(array_int, n_array, a);
+	a = push_array_into_stack(array, n_array, a);
+	double lixo = dlst_min(a);
+	printf("min: %f\n", lixo);
+	print_stacks(a,b);
+
 
 	i = 0;
 	while(i < n_array)

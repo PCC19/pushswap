@@ -1,0 +1,3 @@
+#!/bin/bash
+
+seq 1 5 | shuf --random-source=42
