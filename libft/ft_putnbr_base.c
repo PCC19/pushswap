@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 18:38:27 by pcunha            #+#    #+#             */
-/*   Updated: 2021/05/10 18:17:43 by user42           ###   ########.fr       */
+/*   Updated: 2021/07/20 22:36:46 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	check_plus_minus(char *base)
 	return (error);
 }
 
-int	check_repeated(char *base)
+static int	check_repeated(char *base)
 {
 	int	i;
 	int	j;
