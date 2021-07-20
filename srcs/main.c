@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
 
 	radix_sort(&a, &b);
 
+//printf("is sorted %d\n", is_stack_sorted(a));
+
 //	i = 0;
 //	while(i < n_array)
 //	{

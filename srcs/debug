@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in $(seq 1 10 | tr '\n' ' ');
+do
+	./st $1
+done

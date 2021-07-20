@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/20 21:02:51 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 22:08:56 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 23:45:04 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ static void	push_on_bit(t_dlist **a, t_dlist **b, int stack_size, int i)
 			ra(a, b);
 		j++;
 	}
-
 }
 
 static void	return_to_a(t_dlist **a, t_dlist **b)
@@ -35,10 +34,10 @@ static void	return_to_a(t_dlist **a, t_dlist **b)
 	cursor = *b;
 	while(cursor != NULL)
 	{
-		pa(a,b);
 		cursor = cursor->next;
+		pa(a,b);
 	}
-	pa(a, b);
+	pa(a,b);
 }
 
 void	radix_sort(t_dlist **a, t_dlist **b)
@@ -51,15 +50,18 @@ void	radix_sort(t_dlist **a, t_dlist **b)
 	stack_size = len_dlst(*a);
 	max = dlst_max(*a);
 	n_bits = most_significant_bit_position(max);
+	//	printf("nbits: %d\n", n_bits);
 	i = 0;
-//		print_stacks(*a,*b);
-	while(i < n_bits)
+	//	print_stacks(*a,*b);
+	//while(i < 3)
+	while(i < n_bits + 1)
 	{
+//			printf("=== %d ===\n", i); 
 		push_on_bit(a, b, stack_size, i);
-		print_stacks(*a,*b);
+//			print_stacks(*a,*b);
 		return_to_a(a, b);
 		i++;
-		print_stacks(*a,*b);
+//			print_stacks(*a,*b);
 	}
 //	print_stacks(*a,*b);
 

@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 01:21:57 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 22:41:40 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 23:11:37 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ void	u_print_stack(t_dlist *list, char c)
 	while(cursor != NULL)
 	{
 		byte = *(double*)cursor->content;
-		ft_putnbr_base(byte, "01");ft_putchar('\t');
-		//printf("%.0f ", byte); 
+		//ft_putnbr_base(byte, "01");ft_putchar('\t');
+		printf("%.0f ", byte); 
 		cursor = cursor->prev;
 	}
 	printf("\n");

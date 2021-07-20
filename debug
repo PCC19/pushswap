@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in $(seq 1 100 | tr '\n' ' ');
+do
+	./st $1 | tail -1 | grep 0
+done
