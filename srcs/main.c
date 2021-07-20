@@ -32,7 +32,9 @@ int main(int argc, char *argv[])
 	//a = push_array_into_stack(array_int, n_array, a);
 	a = push_array_into_stack(array, n_array, a);
 	double lixo = dlst_min(a);
+	double lix = dlst_max(a);
 	printf("min: %f\n", lixo);
+	printf("max: %f\n", lix);
 	print_stacks(a,b);
 
 
@@ -126,17 +128,17 @@ int main(int argc, char *argv[])
 
 
 	// Cria lista
-	int x = 10;
+	double x = 10;
 	printf("ini listas\n");
 //	a = ft_dlst_create(&x);
 	a = ft_dlst_push(&x, a);
 	u_print_dlst(a);
-	int y = 20;
+	double y = 20;
 	printf("segundo \n");
 	a = ft_dlst_push(&y, a);
 	u_print_dlst(a);
 	printf("terceiro\n");
-	int z = 30;
+	double z = 30;
 	a = ft_dlst_push(&z, a);
 	u_print_dlst(a);
 	int len = len_dlst(a);

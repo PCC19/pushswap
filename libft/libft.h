@@ -6,7 +6,7 @@
 /*   By: cpereira <cpereira@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:27:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 18:16:40 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/20 18:28:44 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,6 @@ void			ft_rmvchar(char **si, char c);
 void			*safe_malloc(size_t size);
 void			u_free_array_bi(char **s);
 void			u_print_array_bi(char **s);
-double			dlst_min(t_dlist *list);
 
 
 
