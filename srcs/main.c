@@ -9,14 +9,10 @@ int main(int argc, char *argv[])
 	double	*array;
 	int		n_array;
 	int		i;
+	(void) i;
 	t_dlist	*a;
 	t_dlist	*b;
 	
-
-	double lixo = 8;
-	printf("msbp %d\n", most_significant_bit_position(lixo));
-
-
 	parse_inputs(argc, argv, &array, &n_array);
 	//i = -1; while(i++ < n_array - 1) printf("array[%d] = %f\n", i, array[i]);
 	check_repeated(array, n_array);
@@ -29,13 +25,13 @@ int main(int argc, char *argv[])
 
 	radix_sort(&a, &b);
 
-	i = 0;
-	while(i < n_array)
-	{
-		pb(&a, &b);
-		//print_stacks(a,b);
-		i++;
-	}
+//	i = 0;
+//	while(i < n_array)
+//	{
+//		pb(&a, &b);
+//		//print_stacks(a,b);
+//		i++;
+//	}
 
 // ==================== FREES ===============
 
