@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 17:46:23 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/21 18:08:50 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/21 18:18:02 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,27 +26,52 @@ static int find_index(double value, t_dlist *list)
 	}
 	return (i);
 }
+
+static void	handle_0(t_dlist **a, t_dlist **b, int idx)
+{
+	// calculate num of ra / rra
+		if (idx == 4)
+			rra(a);
+		if (idx == 5)
+		{
+			rra(a);
+			rra(a);
+		}
+		if (idx == 1)
+			ra(a ,b);
+		if (idx == 2)
+		{
+			ra(a, b);
+			ra(a, b);
+		}
+		pb(a, b);
+}
+
+static void	handle_1(t_dlist **a, t_dlist **b, int idx)
+{
+	// calculate num of ra / rra
+		if (idx == 1)
+			ra(a, b);
+		if (idx == 3)
+			rra(a);
+		if (idx == 2)
+		{
+			ra(a ,b);
+			ra(a ,b);
+		}
+		pb(a, b);
+}
 		
 void	sort_5(t_dlist **a, t_dlist **b)
 {
 	(void) b;
 	int idx;
 
-	// find index of zero
 	idx = find_index(0, *a);
-	printf("idx: %d\n", idx);
+	handle_0(a, b, idx);
 	idx = find_index(1, *a);
-	printf("idx: %d\n", idx);
-
-	
-	// calculate num of ra / rra
-	// pb
-	// find index of one
-	// calculate num of ra / rra
-	// pb
-	// sort 3
-	// pa pa
-
-
+	handle_1(a, b, idx);
+	sort_3(a, b);
+	pa(a ,b);
+	pa(a, b);
 }
-
