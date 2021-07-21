@@ -23,7 +23,12 @@ int main(int argc, char *argv[])
 	a = push_array_into_stack(array, n_array, a);
 	normalize_array(&array, n_array);
 
-	radix_sort(&a, &b);
+		print_stacks(a,b);
+	sort_3(&a, &b);
+		print_stacks(a,b);
+
+
+	//radix_sort(&a, &b);
 
 //printf("is sorted %d\n", is_stack_sorted(a));
 

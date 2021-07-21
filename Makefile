@@ -47,7 +47,8 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)is_stack_sorted.c\
 		$(SDIR)normalize_array.c\
 		$(SDIR)most_significant_bit_position.c\
-		$(SDIR)radix_sort.c
+		$(SDIR)radix_sort.c\
+		$(SDIR)sort_3.c
 
 
 
