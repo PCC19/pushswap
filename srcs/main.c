@@ -24,7 +24,13 @@ int main(int argc, char *argv[])
 	normalize_array(&array, n_array);
 
 		print_stacks(a,b);
-	sort_3(&a, &b);
+	if (n_array == 3)
+		sort_3(&a, &b);
+	else if (n_array == 5)
+		sort_5(&a, &b);
+	else
+		radix_sort(&a, &b);
+
 		print_stacks(a,b);
 
 

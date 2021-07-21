@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 23:21:37 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/21 17:28:14 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/21 18:03:57 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	parse_inputs(int argc, char *argv[], double **array, int *n_array)
 		i = 0;
 		while (array_bi[i] != NULL)
 			i++;
-		(*array) = populate_array(i, array_bi);
+		(*array) = populate_array(i + 1, array_bi);
 		*n_array = i;
 		free(cleaned_str);
 		u_free_array_bi(array_bi);

@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 22:48:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/21 17:28:23 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/21 18:02:51 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ double *populate_array(int argc, char **array_bi)
 	array = (double*)malloc(sizeof(double) * (argc - 1));
 
 	i = 0;
-	while(i < argc)
+	while(i < argc - 1)
 	{
 		if (is_integer(array_bi[i]))
 		{
