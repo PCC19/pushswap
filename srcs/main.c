@@ -23,18 +23,28 @@ int main(int argc, char *argv[])
 	a = push_array_into_stack(array, n_array, a);
 	normalize_array(&array, n_array);
 
-		print_stacks(a,b);
-	if (n_array == 3)
+	// 1 elem: nada
+	// 2 elem: sort ?
+	// 3 elem: sort3
+	// 5 elem: sort5
+	// >5elem: radix
+	
+	if (is_stack_sorted(a))
+		exit(0);
+
+//			print_stacks(a,b);
+	if (n_array == 2)
+	{
+		if (!is_stack_sorted(a))
+			ra(&a, &b);
+	}
+	else if (n_array == 3)
 		sort_3(&a, &b);
 	else if (n_array == 5)
 		sort_5(&a, &b);
 	else
 		radix_sort(&a, &b);
-
-		print_stacks(a,b);
-
-
-	//radix_sort(&a, &b);
+//			print_stacks(a,b);
 
 //printf("is sorted %d\n", is_stack_sorted(a));
 

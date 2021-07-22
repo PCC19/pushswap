@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:56:55 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/15 20:59:06 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 21:44:50 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char *remove_quotes(char *str)
 {
 	char *clean_str;
 
-	clean_str = ft_strtrim(str, "\"");
+	clean_str = ft_strtrim(str, "\" ");
 	return clean_str;
 }
 

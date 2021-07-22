@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 23:21:37 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/21 18:03:57 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 21:44:35 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	parse_inputs(int argc, char *argv[], double **array, int *n_array)
 
 	cleaned_str = NULL;
 	if (argc == 1)
-		bye();
+		exit(1);
 	
 	if (argc == 2)
 	{
