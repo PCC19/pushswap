@@ -6,7 +6,7 @@
 /*   By: cpereira <cpereira@student.42sp.org>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:27:14 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 22:33:06 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:23:25 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,10 +117,7 @@ void			u_print_array_bi(char **s);
 double			dlst_mean(t_dlist *list);
 int				ft_get_bit_double(double x, int n);
 void			ft_putnbr_base(int nbr, char *base);
-
-
-
-
+void			u_print_dlst(t_dlist *list);
 
 
 #endif

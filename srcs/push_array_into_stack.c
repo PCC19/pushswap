@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 01:48:42 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 18:22:33 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:20:39 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ t_dlist	*push_array_into_stack(double *array, int n_array, t_dlist *list)
 	while (i >= 0)
 	{
 		list  = ft_dlst_push(&array[i], list);
-//		printf("%d: content %d\n", i, *(int*)list->content);
 		i--;
 	}
 	return (list);

@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/20 21:02:51 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 23:45:04 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:21:00 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,19 +50,12 @@ void	radix_sort(t_dlist **a, t_dlist **b)
 	stack_size = len_dlst(*a);
 	max = dlst_max(*a);
 	n_bits = most_significant_bit_position(max);
-	//	printf("nbits: %d\n", n_bits);
 	i = 0;
-	//	print_stacks(*a,*b);
-	//while(i < 3)
 	while(i < n_bits + 1)
 	{
-//			printf("=== %d ===\n", i); 
 		push_on_bit(a, b, stack_size, i);
-//			print_stacks(*a,*b);
 		return_to_a(a, b);
 		i++;
-//			print_stacks(*a,*b);
 	}
-//	print_stacks(*a,*b);
 
 }
