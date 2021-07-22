@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 01:05:49 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 01:07:02 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:39:41 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	len_dlst(t_dlist *list)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while(list != NULL)
+	while (list != NULL)
 	{
 		i++;
 		list = list->next;

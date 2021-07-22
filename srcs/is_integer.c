@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 22:33:20 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/15 22:36:38 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:38:19 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,17 @@
 
 int	is_integer(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	if(s[i] == '-' || s[i] == '+')
+	if (s[i] == '-' || s[i] == '+')
 		i++;
-	while(s[i] != 0)
+	while (s[i] != 0)
 	{
 		if (!ft_isdigit(s[i]))
-			return(0);
+			return (0);
 		else
 			i++;
 	}
 	return (1);
 }
-

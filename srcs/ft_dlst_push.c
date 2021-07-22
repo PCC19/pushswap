@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 17:48:47 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/20 18:23:29 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:37:19 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,12 @@
 t_dlist	*ft_dlst_push(double *value, t_dlist *list)
 {
 	t_dlist	*node;
-	(void) node;
 
-	// Se lista estiver vazia
 	if (list == NULL)
 	{
 		list = ft_dlst_create(value);
 		return (list);
 	}
-	// Se lista ja existir
 	else
 	{
 		node = (t_dlist *)malloc(sizeof(t_dlist));

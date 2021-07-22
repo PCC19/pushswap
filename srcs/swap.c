@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 19:11:09 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:23:59 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:58:34 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	swap(t_dlist **a)
 {
-	t_dlist *second;
-	t_dlist *third;
+	t_dlist	*second;
+	t_dlist	*third;
 
 	if ((*a) != NULL && (*a)->next != NULL)
 	{

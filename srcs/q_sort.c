@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 16:31:32 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/16 16:58:06 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:49:44 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	partition(double *array, int left, int right)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	double	pivot;
 	double	temp;
 

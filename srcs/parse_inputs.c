@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 23:21:37 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/22 21:44:35 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:45:52 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 int	parse_inputs(int argc, char *argv[], double **array, int *n_array)
 {
-	char *cleaned_str;
-	char **array_bi;
-	int	i;
+	char	*cleaned_str;
+	char	**array_bi;
+	int		i;
 
 	cleaned_str = NULL;
 	if (argc == 1)
-		exit(1);
-	
+		exit (1);
 	if (argc == 2)
 	{
 		cleaned_str = remove_quotes(argv[1]);

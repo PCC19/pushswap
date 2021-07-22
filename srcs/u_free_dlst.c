@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 19:36:59 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 18:16:32 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:58:54 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	u_free_dlst(t_dlist *list)
 {
-	t_dlist *temp;
+	t_dlist	*temp;
 
 	while (list != NULL)
 	{

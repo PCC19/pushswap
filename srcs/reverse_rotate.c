@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 18:48:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/17 19:41:21 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:51:49 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	reverse_rotate(t_dlist **a)
 {
-	t_dlist *last;
+	t_dlist	*last;
 
 	if (*a != NULL && (*a)->next != NULL)
 	{

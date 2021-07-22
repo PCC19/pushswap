@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/22 22:24:33 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/22 22:59:32 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,6 @@
 /*
 ** Data Structures 
 */
-
-
-
 
 /*
 ** Functions
@@ -66,7 +63,4 @@ int		most_significant_bit_position(double num);
 void	radix_sort(t_dlist **a, t_dlist **b);
 void	sort_3(t_dlist **a, t_dlist **b);
 void	sort_5(t_dlist **a, t_dlist **b);
-
-
-
 #endif
