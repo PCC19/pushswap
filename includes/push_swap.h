@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/15 20:42:01 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/23 22:12:42 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/23 22:19:55 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,4 @@ int		most_significant_bit_position(double num);
 void	radix_sort(t_dlist **a, t_dlist **b);
 void	sort_3(t_dlist **a, t_dlist **b);
 void	sort_5(t_dlist **a, t_dlist **b);
-void	u_print_stack(t_dlist *list, char c);
-void	print_stacks(t_dlist *a, t_dlist *b);
 #endif

@@ -46,9 +46,7 @@ SRCS =	$(SDIR)main.c\
 		$(SDIR)most_significant_bit_position.c\
 		$(SDIR)radix_sort.c\
 		$(SDIR)sort_3.c\
-		$(SDIR)sort_5.c\
-		$(SDIR)u_print_stack.c\
-		$(SDIR)print_stacks.c
+		$(SDIR)sort_5.c
 
 OBJS =	$(patsubst $(SDIR)%.c, $(ODIR)%.o, $(SRCS))
 

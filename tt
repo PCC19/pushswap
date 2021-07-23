@@ -1,5 +1,0 @@
-#!/bin/bash
-
-#seq 1 $1 | shuf | tr '\n' ' ' | xargs ./push_swap | wc -l
-seq 1 $1 | shuf | tr '\n' ' ' | xargs ./push_swap > out; grep Error out; wc -l <out; rm out
-
