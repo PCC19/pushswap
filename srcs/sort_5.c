@@ -6,7 +6,7 @@
 /*   By: pcunha <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/21 17:46:23 by pcunha            #+#    #+#             */
-/*   Updated: 2021/07/22 22:57:54 by pcunha           ###   ########.fr       */
+/*   Updated: 2021/07/23 22:17:40 by pcunha           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	handle_0(t_dlist **a, t_dlist **b, int idx)
 {
 	if (idx == 4)
 		rra(a);
-	if (idx == 5)
+	if (idx == 3)
 	{
 		rra(a);
 		rra(a);

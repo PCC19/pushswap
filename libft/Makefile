@@ -6,7 +6,7 @@
 #    By: pcunha <pcunha@student.42sp.org.br>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/28 13:39:04 by pcunha            #+#    #+#              #
-#    Updated: 2021/07/22 22:23:55 by pcunha           ###   ########.fr        #
+#    Updated: 2021/07/23 22:10:18 by pcunha           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,7 @@ OBJECTS=ft_atoi.o ft_bzero.o ft_isalnum.o \
 		ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o\
 		ft_lstadd_back_p.o ft_dlst_create.o ft_dlst_add.o ft_dlst_last.o\
 		ft_rmvchar.o safe_malloc.o u_free_array_bi.o u_print_array_bi.o\
-		ft_get_bit_double.o u_print_dlst.o 
+		ft_get_bit_double.o u_print_dlst.o
 
 CC = clang
 
